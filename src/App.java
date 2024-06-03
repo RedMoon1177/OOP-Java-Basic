@@ -1,9 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        User u = new User();
-        u.set_name("Anne");    
-        u.set_membership(User.Membership.Gold);   
-        System.out.println(u.get_name());
-        System.out.println(u.get_memebership());
+        User u = new User("Anne", "gold"); 
+        User u2 = new User("Hannah", "gold"); 
+        System.out.println(u.equals(u2));
     }
 }

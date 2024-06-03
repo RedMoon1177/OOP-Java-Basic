@@ -8,6 +8,15 @@ public class User {
         Bronze, Silver, Gold;
     }
 
+    // CONTRUCTORS (METHODS)
+    public User() {
+    }
+
+    public User(String name, String membership) {
+        set_name(name);
+        set_membership(membership);
+    }
+
     // GET - SET METHODS
     void set_name(String name) {
         _name = name;
@@ -29,4 +38,17 @@ public class User {
     String get_memebership() {
         return _memebership;
     }
-}
+
+    // OVERRIDING METHODS
+    public String toString() {
+        return get_name() + " " + get_memebership();
+    }
+
+    public boolean equals(User u2) {
+        if(get_name() == u2.get_name() && get_memebership() == u2.get_memebership()) {
+            return true; 
+        } else {
+            return false;
+        }
+    }
+} 
