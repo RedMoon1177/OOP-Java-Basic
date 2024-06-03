@@ -1,6 +1,5 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
         User u = new User();
         u.set_name("Anne");    
         u.set_membership(User.Membership.Gold);   
